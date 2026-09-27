@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio web de Julio Jimenez, desarrollador frontend enfocado en interfaces claras, accesibles y responsive."
+    />
+    <title>Julio Jimenez | Portafolio Frontend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="navbar">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span>JJ</span>
+          <strong>Julio Jimenez</strong>
+        </a>
+
+        <nav class="nav-links" id="main-navigation" aria-label="Navegacion principal">
+          <a href="#sobre-mi">Sobre mi</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#sistema">Sistema</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-button js-theme-toggle" type="button" aria-label="Cambiar a tema oscuro">
+            <span class="icon fa-solid fa-moon theme-moon" aria-hidden="true"></span>
+            <span class="icon fa-solid fa-sun theme-sun" aria-hidden="true"></span>
+          </button>
+          <button
+            class="icon-button menu-button js-menu-toggle"
+            type="button"
+            aria-controls="main-navigation"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+          >
+            <span class="icon icon-menu fa-solid fa-bars" aria-hidden="true"></span>
+            <span class="icon icon-close fa-solid fa-xmark" aria-hidden="true"></span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Disponible para nuevos proyectos</p>
+            <h1 id="hero-title">Diseno y desarrollo experiencias web que <em>si funcionan.</em></h1>
+            <p class="hero-lead">
+              Soy Julio, desarrollador frontend enfocado en crear interfaces claras,
+              accesibles y construidas con atencion al detalle.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#proyectos">
+                Ver proyectos
+                <span class="icon fa-solid fa-arrow-right" aria-hidden="true"></span>
+              </a>
+              <a class="button secondary" href="#contacto">Hablemos</a>
+            </div>
+            <aside class="hero-proof" aria-label="Indicadores principales">
+              <div>
+                <strong>03+</strong>
+                <span>Proyectos completos</span>
+              </div>
+              <div>
+                <strong>02</strong>
+                <span>Años aprendiendo</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>Compromiso</span>
+              </div>
+            </aside>
+          </div>
+
+          <figure class="hero-art" aria-label="Avatar visual de Julio trabajando">
+            <div class="portrait-card">
+              <div class="code-chip chip-one">&lt;main&gt;</div>
+              <div class="portrait photo-slot" role="img" aria-label="Avatar de Julio Jimenez">
+                <div class="photo-placeholder">
+                  <strong>JJ</strong>
+                  <small>Avatar</small>
+                </div>
+                <img class="profile-image optional-image" src="img/avatar.jpg" alt="Foto de Julio Jimenez" />
+              </div>
+              <div class="code-chip chip-two">const idea = <b>true</b>;</div>
+            </div>
+            <figcaption class="floating-card">
+              <span class="icon fa-solid fa-code" aria-hidden="true"></span>
+              <span><b>Frontend</b> limpio y escalable</span>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="section about" id="sobre-mi" aria-labelledby="about-title">
+          <p class="section-label">01 / Sobre mi</p>
+          <div class="about-grid">
+            <h2 id="about-title">Curiosidad, criterio y codigo.</h2>
+            <div class="about-copy">
+              <p>
+                Me motiva convertir problemas complejos en productos digitales faciles de usar.
+                Mi proceso combina investigacion, diseno visual y desarrollo frontend para cuidar
+                tanto la experiencia como la calidad tecnica.
+              </p>
+              <p>
+                Actualmente profundizo en JavaScript, accesibilidad y sistemas de diseno. Busco
+                oportunidades donde pueda aportar, aprender en equipo y construir soluciones con impacto.
+              </p>
+              <ul class="values" aria-label="Valores de trabajo">
+                <li>
+                  <span class="icon fa-solid fa-check" aria-hidden="true"></span>
+                  Diseno con intencion
+                </li>
+                <li>
+                  <span class="icon fa-solid fa-check" aria-hidden="true"></span>
+                  Codigo mantenible
+                </li>
+                <li>
+                  <span class="icon fa-solid fa-check" aria-hidden="true"></span>
+                  Aprendizaje continuo
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section skills-section" id="habilidades" aria-labelledby="skills-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">02 / Habilidades</p>
+              <h2 id="skills-title">Herramientas que domino</h2>
+            </div>
+            <p>Niveles basados en mi experiencia practica y en proyectos que puedo explicar y defender.</p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="skill-top"><span class="skill-icon"><span class="icon fa-brands fa-html5" aria-hidden="true"></span></span><small>Frontend</small></div>
+              <h3>HTML semantico</h3>
+              <p>Estructuras accesibles, ordenadas y faciles de mantener.</p>
+              <div class="skill-meta"><span>Nivel</span><b>Avanzado</b></div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-top"><span class="skill-icon"><span class="icon fa-brands fa-css3-alt" aria-hidden="true"></span></span><small>Frontend</small></div>
+              <h3>CSS / Responsive</h3>
+              <p>Layouts mobile first con Flexbox, Grid y tokens reutilizables.</p>
+              <div class="skill-meta"><span>Nivel</span><b>Intermedio</b></div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-top"><span class="skill-icon"><span class="icon fa-brands fa-js" aria-hidden="true"></span></span><small>Frontend</small></div>
+              <h3>JavaScript</h3>
+              <p>Interacciones reales, DOM, formularios y persistencia local.</p>
+              <div class="skill-meta"><span>Nivel</span><b>Intermedio</b></div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-top"><span class="skill-icon"><span class="icon fa-brands fa-github" aria-hidden="true"></span></span><small>Herramientas</small></div>
+              <h3>Git & GitHub</h3>
+              <p>Control de versiones, repositorios y publicacion con GitHub Pages.</p>
+              <div class="skill-meta"><span>Nivel</span><b>Intermedio</b></div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-top"><span class="skill-icon"><span class="icon fa-brands fa-figma" aria-hidden="true"></span></span><small>Diseno</small></div>
+              <h3>Figma</h3>
+              <p>Lectura de interfaces, componentes, espaciado y consistencia visual.</p>
+              <div class="skill-meta"><span>Nivel</span><b>Básico</b></div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-top"><span class="skill-icon"><span class="icon fa-solid fa-universal-access" aria-hidden="true"></span></span><small>Calidad</small></div>
+              <h3>Accesibilidad</h3>
+              <p>Buenas practicas de etiquetas, foco, contraste y navegacion.</p>
+              <div class="skill-meta"><span>Nivel</span><b>Intermedio</b></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section projects-section" id="proyectos" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">03 / Proyectos destacados</p>
+              <h2 id="projects-title">Trabajo reciente</h2>
+            </div>
+            <p>Una seleccion de soluciones creadas desde la estrategia hasta la implementacion.</p>
+          </div>
+
+          <div class="filters" role="group" aria-label="Filtrar proyectos">
+            <button class="filter active js-filter" type="button" data-filter="Todos">Todos</button>
+            <button class="filter js-filter" type="button" data-filter="JavaScript">JavaScript</button>
+            <button class="filter js-filter" type="button" data-filter="Python">Python</button>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card" data-category="Python">
+              <div class="project-visual banano" aria-label="Vista previa de la aplicación de detección de enfermedades en banano" role="img">
+                <img class="project-image optional-image" src="img/banano-ia/banana-ia-3.png" alt="Vista previa de la app de diagnóstico de banano" />
+                <img class="project-image optional-image" src="img/banano-ia/banana-ia-1.png" alt="Dashboard de detección de enfermedades en plantaciones de banano" />
+                <img class="project-image optional-image second-image" src="img/banano-ia/banana-ia-2.png" alt="Landing page de la app de diagnóstico de banano" />
+              </div>
+              <div class="project-content">
+                <span class="project-number">01</span>
+                <h3>Banano IA</h3>
+                <p>Aplicacion con Django y IA para detectar enfermedades en plantaciones de banano.</p>
+                <div class="tags"><span>Python</span><span>Django</span><span>IA</span></div>
+                <button class="text-link js-project-open" type="button" data-project="banano">
+                  Ver caso de estudio
+                  <span class="icon fa-solid fa-arrow-right" aria-hidden="true"></span>
+                </button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="JavaScript">
+              <div class="project-visual learning" aria-label="Vista previa de Aula Abierta" role="img">
+                <img class="project-image optional-image" src="img/guios_pro/guios_pro_1.png" alt="Captura principal de Aula Abierta" />
+                <img class="project-image optional-image second-image" src="img/guios_pro/guios_pro_2.png" alt="Segunda captura de Aula Abierta" />
+                <img class="project-image optional-image" src="img/guios_pro/guios_pro_3.png" alt="Tercera captura de Aula Abierta" />
+              </div>
+              <div class="project-content">
+                <span class="project-number">02</span>
+                <h3>Aula Abierta</h3>
+                <p>Plataforma academica accesible para descubrir, guardar y seguir rutas de aprendizaje.</p>
+                <div class="tags"><span>HTML</span><span>CSS Grid</span><span>JavaScript</span></div>
+                <button class="text-link js-project-open" type="button" data-project="aula">
+                  Ver caso de estudio
+                  <span class="icon fa-solid fa-arrow-right" aria-hidden="true"></span>
+                </button>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="JavaScript">
+              <div class="project-visual memory" aria-label="Vista previa del juego de memoria" role="img">
+                <img class="project-image optional-image" src="img/juego de cartas/juego-cartas-1.jpg" alt="Captura del juego de memoria de cartas" />
+                <img class="project-image optional-image second-image" src="img/juego de cartas/juego-cartas-2.jpg" alt="Captura adicional del juego de memoria de cartas" />
+              </div>
+              <div class="project-content">
+                <span class="project-number">03</span>
+                <h3>Memoria de cartas</h3>
+                <p>Juego de memoria con cartas para entrenar la atencion y la retencion visual.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <button class="text-link js-project-open" type="button" data-project="verde">
+                  Ver caso de estudio
+                  <span class="icon fa-solid fa-arrow-right" aria-hidden="true"></span>
+                </button>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section class="section design-system-band" id="sistema" aria-labelledby="system-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">04 / Design System</p>
+              <h2 id="system-title">Una base visual consistente</h2>
+            </div>
+            <p>Tokens y componentes reutilizables que construyen la experiencia de este portafolio.</p>
+          </div>
+
+          <div class="system-grid">
+            <article class="system-panel">
+              <h3>Colores</h3>
+              <p>Paleta funcional y accesible.</p>
+              <div class="swatches">
+                <div>
+                  <span class="swatch primary-swatch"></span>
+                  <span class="color-label">Primary <small>#5B5BD6</small></span>
+                </div>
+                <div>
+                  <span class="swatch secondary-swatch"></span>
+                  <span class="color-label">Secondary <small>#C6FF65</small></span>
+                </div>
+                <div>
+                  <span class="swatch background-swatch"></span>
+                  <span class="color-label">Background <small>#F6F5F1</small></span>
+                </div>
+                <div>
+                  <span class="swatch surface-swatch"></span>
+                  <span class="color-label">Surface <small>#FFFFFF</small></span>
+                </div>
+                <div>
+                  <span class="swatch text-swatch"></span>
+                  <span class="color-label">Text <small>#17171C</small></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="system-panel">
+              <h3>Tipografia</h3>
+              <p>Una escala clara para cada nivel.</p>
+              <div class="type-samples">
+                <div><small>H1 / 64</small><strong>Ideas claras</strong></div>
+                <div><small>H2 / 42</small><b>Diseno util</b></div>
+                <div><small>H3 / 22</small><span>Componentes solidos</span></div>
+                <div><small>Body / 16</small><p>Texto legible para comunicar sin ruido.</p></div>
+                <a href="#contacto">Enlace interactivo</a>
+              </div>
+            </article>
+
+            <article class="system-panel">
+              <h3>Espaciado</h3>
+              <p>Escala modular de 4 puntos.</p>
+              <div class="space-list">
+                <div><span class="space-name">XS</span><span class="space-bar" style="width: 0.5rem"></span><small>4px</small></div>
+                <div><span class="space-name">SM</span><span class="space-bar" style="width: 1rem"></span><small>8px</small></div>
+                <div><span class="space-name">MD</span><span class="space-bar" style="width: 2rem"></span><small>16px</small></div>
+                <div><span class="space-name">LG</span><span class="space-bar" style="width: 3rem"></span><small>24px</small></div>
+                <div><span class="space-name">XL</span><span class="space-bar" style="width: 5rem"></span><small>40px</small></div>
+              </div>
+            </article>
+
+            <article class="system-panel">
+              <h3>Componentes</h3>
+              <p>Estados reales utilizados en el sitio.</p>
+              <div class="components-demo">
+                <div class="components-row">
+                  <a class="button primary compact" href="#contacto">Primario</a>
+                  <a class="button secondary compact" href="#proyectos">Secundario</a>
+                </div>
+                <div class="tags"><span>JavaScript</span><span>Frontend</span></div>
+                <label for="system-demo-input">
+                  Campo de ejemplo
+                  <input id="system-demo-input" placeholder="Escribe aqui..." />
+                </label>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact" id="contacto" aria-labelledby="contact-title">
+          <div class="contact-copy">
+            <p class="section-label">05 / Contacto</p>
+            <h2 id="contact-title">Construimos algo que importe?</h2>
+            <p>Cuéntame sobre tu idea, oportunidad o proyecto. Te respondere lo antes posible.</p>
+            <a class="mail-link" href="mailto:julio2000jimenezjimenez@gmail.com">
+              <span class="icon fa-solid fa-envelope" aria-hidden="true"></span>
+              julio2000jimenezjimenez@gmail.com
+            </a>
+          </div>
+
+          <form class="contact-form js-contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">
+                Nombre
+                <input id="name" name="name" type="text" placeholder="Tu nombre" minlength="2" required />
+              </label>
+              <label for="email">
+                Correo
+                <input id="email" name="email" type="email" placeholder="tu@correo.com" required />
+              </label>
+            </div>
+            <label for="subject">
+              Asunto
+              <input id="subject" name="subject" type="text" placeholder="En que puedo ayudarte?" minlength="3" required />
+            </label>
+            <label for="message">
+              Mensaje
+              <textarea id="message" name="message" placeholder="Cuéntame un poco sobre tu proyecto..." minlength="10" rows="5" required></textarea>
+            </label>
+            <div class="form-footer">
+              <p class="form-status js-form-status" aria-live="polite"></p>
+              <button class="button primary" type="submit">
+                Enviar mensaje
+                <span class="icon fa-solid fa-arrow-right" aria-hidden="true"></span>
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="brand" href="#inicio">
+          <span>JJ</span>
+          <strong>Julio Jimenez</strong>
+        </a>
+        <p>Diseñado y desarrollado con intencion. © 2026</p>
+        <div class="footer-links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">
+            <span class="icon fa-brands fa-github" aria-hidden="true"></span>
+            GitHub
+          </a>
+          <a href="mailto:julio2000jimenezjimenez@gmail.com">
+            <span class="icon fa-solid fa-envelope" aria-hidden="true"></span>
+            Email
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal-backdrop js-modal" hidden>
+      <article class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="icon-button modal-close js-modal-close" type="button" aria-label="Cerrar detalle">
+          <span class="icon fa-solid fa-xmark" aria-hidden="true"></span>
+        </button>
+        <div class="project-visual js-modal-visual" aria-hidden="true"></div>
+        <div class="modal-content">
+          <span class="section-label">Caso de estudio</span>
+          <h2 id="modal-title"></h2>
+          <p class="js-modal-description"></p>
+          <h3>El reto</h3>
+          <p class="js-modal-problem"></p>
+          <h3>Tecnologias</h3>
+          <div class="tags js-modal-tags"></div>
+          <div class="modal-actions">
+            <a class="button secondary js-modal-repo" href="#" target="_blank" rel="noreferrer">
+              <span class="icon fa-brands fa-github" aria-hidden="true"></span>
+              Repositorio
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <button class="back-top js-back-top" type="button" aria-label="Volver al inicio">
+      <span class="icon fa-solid fa-arrow-right" aria-hidden="true"></span>
+    </button>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
